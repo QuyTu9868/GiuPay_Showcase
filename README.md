@@ -4,8 +4,6 @@
 
 GiuPay lets any shop accept USDC payments on-chain with buyer protection built in: funds sit in a smart-contract escrow for 14 days, disputes can be opened and resolved on-chain, and every completed purchase mints a soulbound warranty NFT as proof of purchase.
 
-> 🔒 Source code is kept in a private repository for now. This repo shares what the project does, how it works, and links to verify it on-chain. Reach out if you'd like a closer look.
-
 ---
 
 ## Demo video
@@ -75,7 +73,7 @@ All verified and viewable on [Arc Explorer](https://testnet.arcscan.app):
 
 ## Status
 
-🚧 Testnet build, actively developed. Live demo link coming soon.
+🚀 Live at [giupay-six.vercel.app](https://giupay-six.vercel.app) — testnet build, actively developed.
 
 ## Contact
 
