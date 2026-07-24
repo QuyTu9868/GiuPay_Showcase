@@ -8,7 +8,7 @@ GiuPay lets any shop accept USDC payments on-chain with buyer protection built i
 
 ## Demo video
 
-[▶️ Watch the full walkthrough](giupay_nen.mp4)
+[▶️ Watch the full walkthrough](https://github.com/user-attachments/assets/3b522003-f536-4578-b299-5721b7573e7a)
 
 Full user journey in one take: seller registers a shop and lists a product, a buyer browses and reads reviews, pays via multi-chain checkout (bridging USDC in from Ethereum through Circle's CCTP), leaves a review, and gets a warranty SBT minted straight to their profile — then the seller ships the order and a dispute gets opened.
 
