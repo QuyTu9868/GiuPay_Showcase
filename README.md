@@ -6,20 +6,9 @@ GiuPay lets any shop accept USDC payments on-chain with buyer protection built i
 
 ---
 
-## Demo video
+## Live demo
 
-[▶️ Watch the full walkthrough](giupay_nen.mp4)
-
-Full user journey in one take: seller registers a shop and lists a product, a buyer browses and reads reviews, pays via multi-chain checkout (bridging USDC in from Ethereum through Circle's CCTP), leaves a review, and gets a warranty SBT minted straight to their profile — then the seller ships the order and a dispute gets opened.
-
-## What it does
-
-- **Shop onboarding** — register a shop, admin verifies identity (email + 2FA) and confirms it on-chain via `ShopRegistry`.
-- **On-chain escrow payments** — buyers pay in USDC directly on Arc, or bridge in from Ethereum / Base / Arbitrum / OP Sepolia via **Circle's CCTP**, landing straight into escrow.
-- **14-day buyer protection** — funds auto-release to the shop after 14 days if no dispute is raised.
-- **On-chain dispute resolution** — buyer opens a dispute, the shop can agree to refund (signs on-chain themselves), or an admin steps in to resolve.
-- **Warranty SBT** — a soulbound ERC-721 is minted automatically once payment clears, acting as verifiable proof of purchase + warranty period. It burns itself once the warranty window expires.
-- **Buyer ↔ shop chat** and **reviews** for every completed order.
+🚀 [giupay-six.vercel.app](https://giupay-six.vercel.app)
 
 ## Screenshots
 
@@ -51,6 +40,25 @@ The moment escrow confirms, a soulbound warranty NFT is minted automatically as 
 ![Buyer opens a dispute](screenshots/7-buyer-dispute.png)
 If something's wrong after shipping, the buyer can open a dispute any time within the 14-day escrow window, with the shop given a window to respond or refund on-chain.
 
+**8. Warranty SBT verified on-chain**
+![Warranty SBT verified on-chain](screenshots/8-sbt-explorer.png)
+Every SBT is a real ERC-721 on Arc, verifiable on the block explorer — full metadata (order code, shop, amount paid, purchase date, warranty expiry, payment chain) minted on-chain, not just displayed in the app.
+
+## Demo video
+
+[▶️ Watch the full walkthrough](giupay_nen.mp4)
+
+Full user journey in one take: seller registers a shop and lists a product, a buyer browses and reads reviews, pays via multi-chain checkout (bridging USDC in from Ethereum through Circle's CCTP), leaves a review, and gets a warranty SBT minted straight to their profile — then the seller ships the order and a dispute gets opened.
+
+## What it does
+
+- **Shop onboarding** — register a shop, admin verifies identity (email + 2FA) and confirms it on-chain via `ShopRegistry`.
+- **On-chain escrow payments** — buyers pay in USDC directly on Arc, or bridge in from Ethereum / Base / Arbitrum / OP Sepolia via **Circle's CCTP**, landing straight into escrow.
+- **14-day buyer protection** — funds auto-release to the shop after 14 days if no dispute is raised.
+- **On-chain dispute resolution** — buyer opens a dispute, the shop can agree to refund (signs on-chain themselves), or an admin steps in to resolve.
+- **Warranty SBT** — a soulbound ERC-721 is minted automatically once payment clears, acting as verifiable proof of purchase + warranty period. It burns itself once the warranty window expires.
+- **Buyer ↔ shop chat** and **reviews** for every completed order.
+
 ## Tech stack
 
 | Layer | Stack |
@@ -73,7 +81,7 @@ All verified and viewable on [Arc Explorer](https://testnet.arcscan.app):
 
 ## Status
 
-🚀 Live at [giupay-six.vercel.app](https://giupay-six.vercel.app) — testnet build, actively developed.
+🚧 Testnet build, actively developed.
 
 ## Contact
 
